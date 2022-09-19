@@ -12,4 +12,17 @@ let amigo = [
     'Vinícius', 25, 'Florianópolis'
 ]
 
-console.log(amigo)
+let resposta = window.document.getElementById("txtCor")
+let result = window.document.getElementById("resultado")
+
+let corSite = 'azul'
+
+function resetaCor(){
+    corSite = resposta.value
+    result.innerHTML += `A nova cor é ${corSite}`
+    console.log(corSite)
+
+}
+
+
+
